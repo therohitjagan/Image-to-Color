@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- SEO Meta Tags -->
+    <meta name="description" content="InfinityToolSpace offers an Image Color Palette Generator that allows users to extract and preview color palettes from any image. Choose from HEX and RGB codes.">
+    <meta name="keywords" content="image color palette generator, extract colors from image, color palette tool, hex code, rgb color picker, online color picker, free image color tool">
+    <meta name="author" content="InfinityToolSpace">
+
+    <link rel="icon" href="/img/logo.png" type="image/x-icon">
+
+    <title>Image Color Palette Generator by Rohit Jagan</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <!-- Add Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1><i class="fas fa-palette"></i> Image Color Palette Generator</h1>
+            <p class="subtitle">Extract beautiful colors from any image with precision</p>
+        </div>
+        
+        <div class="main-content">
+            <div class="upload-section">
+                <h2>Upload Your Image</h2>
+                <p class="instruction">Click anywhere on the image to pick colors</p>
+                <input type="file" id="imageInput" accept="image/*">
+                <label for="imageInput" class="upload-btn">
+                    <i class="fas fa-upload"></i> Choose Image
+                </label>
+            </div>
+
+            <div class="image-container">
+                <div class="preview-section">
+                    <div class="preview-wrapper">
+                        <img id="imagePreview" src="" alt="Preview">
+                        <div class="magnifier"></div>
+                    </div>
+                </div>
+                
+                <div class="color-picker-section">
+                    <h3><i class="fas fa-eye-dropper"></i> Color Picker</h3>
+                    <div class="magnifier-info">
+                        <div class="picked-color-preview"></div>
+                        <div class="color-codes">
+                            <div class="hex-code">HEX: <span>#000000</span></div>
+                            <div class="rgb-code">RGB: <span>rgb(0, 0, 0)</span></div>
+                        </div>
+                        <button class="copy-btn">
+                            <i class="fas fa-copy"></i> Copy Color
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="colors-section">
+                <h2><i class="fas fa-swatchbook"></i> Color Palette</h2>
+                <p class="instruction">Click any color to copy its code</p>
+                <div id="colorPalette"></div>
+            </div>
+        </div>
+
+        <footer>
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>About</h4>
+                    <p>A powerful tool to extract colors from images with precision and ease.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <a href="#">Home</a>
+                    <a href="#">Tools</a>
+                    <a href="#">Contact</a>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Rohit Jagan. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+    <script src="/js/script.js"></script>
+</body>
+</html>
